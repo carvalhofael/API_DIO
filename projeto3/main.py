@@ -7,8 +7,6 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Rotas
 app.include_router(atleta_router.router)
 
-# Paginação
 add_pagination(app)
